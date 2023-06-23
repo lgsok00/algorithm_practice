@@ -9,10 +9,6 @@ class Solution {
                 sum_even += num_list[i];
             }
         }
-        if (sum_odd > sum_even) {
-            return sum_odd;
-        } else {
-            return sum_even;
-        }
+        return sum_odd > sum_even ? sum_odd : sum_even;
     }
 }
