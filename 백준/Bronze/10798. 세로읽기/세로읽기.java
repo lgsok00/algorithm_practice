@@ -33,12 +33,12 @@ public class Main {
     StringBuilder sb = new StringBuilder();
     // 세로로 출력해야 하기 때문에 열, 행 순으로 순회
     for (int i = 0; i < max; i++) {
-      for (int j = 0; j < arr.length; j++) {
+      for (char[] chars : arr) {
         // 공백이면 통과
-        if (arr[j][i] == '\0') {
+        if (chars[i] == '\0') {
           continue;
         }
-        sb.append(arr[j][i]);
+        sb.append(chars[i]);
       }
     }
     bw.write(sb.toString());
