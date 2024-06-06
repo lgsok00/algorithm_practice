@@ -25,7 +25,7 @@ public class Main {
       pow = (pow * 31) % 1234567891;
     }
 
-    bw.write(String.valueOf(result));
+    bw.write(String.valueOf(result % 1234567891));
     bw.flush();
     bw.close();
   }
